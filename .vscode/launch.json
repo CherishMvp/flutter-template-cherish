@@ -1,0 +1,89 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Flutter - Android",
+            "request": "launch",
+            "type": "dart",
+            "program": "lib/main.dart",
+            "deviceId": "emulator-5554"
+        },
+        {
+            "name": "Flutter - Android-mumu",
+            "request": "launch",
+            "type": "dart",
+            "program": "lib/main.dart",
+            "deviceId": "127.0.0.1:7555"
+        },
+        {
+            "name": "Flutter - 2Android-mumu",
+            "request": "launch",
+            "type": "dart",
+            "program": "lib/main.dart",
+            "deviceId": "127.0.0.1:16384"
+        },
+        {
+            "name": "ios模拟器 - 15plus-ios17",
+            "request": "launch",
+            "type": "dart",
+            "program": "lib/main.dart",
+            "deviceId": "7E092E65-BBAD-4316-A0F1-50E373A83EEB",
+            // "args": ["--enable-experiment=macros"]//开启实验json功能
+        },
+        // 00008120-000265D10C90A01E
+        {
+            "name": "iphone11-real - iOS",
+            "request": "launch",
+            "type": "dart",
+            "program": "lib/main.dart",
+            "deviceId": "00008030-001D75E802A2802E",
+                 "args": [
+                "--dart-define=ENVIRONMENT=development",
+                "--dart-define=BASE_URL=http://192.168.0.157:6066"
+      ]
+        },
+        {
+            "name": "15plus - iOS",
+            "request": "launch",
+            "type": "dart",
+            "program": "lib/main.dart",
+            "deviceId": "00008120-000265D10C90A01E"
+        },
+   {
+      "name": "Flutter Desktop",
+      "request": "launch",
+      "type": "dart",
+      "program": "lib/main.dart",
+    },
+        {
+            "name": "Flutter - Chrome",
+            "request": "launch",
+            "type": "dart",
+            "program": "lib/main.dart",
+            "deviceId": "chrome",
+            "args": ["--enable-experiment=macros"]//开启实验json功能
+            // "flutterMode": "release"
+        },
+        
+        // 00008030-001A50192250C02E ipad
+         {
+            "name": "Flutter - ipad",
+            "request": "launch",
+            "type": "dart",
+            "program": "lib/main.dart",
+            "deviceId": "00008030-001A50192250C02E",
+            "args": ["--enable-experiment=macros"]//开启实验json功能
+        },
+    {
+      "name": "Dart: Prod Environment",
+      "request": "launch",
+      "type": "dart",
+      "program": "lib/main.dart",
+      "args": [
+        "--dart-define=ENVIRONMENT=production",
+        "--dart-define=BASE_URL=https://api.production.com"
+      ]
+    }
+
+    ]
+}

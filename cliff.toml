@@ -1,0 +1,20 @@
+[cliff]
+# 输出的 CHANGELOG 文件名
+changelog = "CHANGELOG.md"
+# 使用的模板来生成 CHANGELOG
+template = """
+# Changelog
+
+{% for group, commits in commits | group_by(attribute="group") %}
+## {{ group | upper_first }}
+
+{% for commit in commits %}
+- {{ commit.message | upper_first }} ([{{ commit.hash | truncate(length=7) }}] - {{ commit.author }} on {{ commit.date | date(format="%Y-%m-%d") }})
+{% endfor %}
+
+{% endfor %}
+"""
+
+# 过滤掉不需要的提交类型
+[cliff.filters]
+exclude = ["chore", "refactor", "style"]

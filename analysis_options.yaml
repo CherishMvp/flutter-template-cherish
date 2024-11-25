@@ -1,0 +1,12 @@
+include: package:flutter_lints/flutter.yaml
+# 关闭const检查
+analyzer:
+  errors:
+    library_private_types_in_public_api: ignore
+    prefer_const_constructors: ignore # 忽略const
+    # 忽略todo
+    todo: ignore
+    
+  enable-experiment:
+    - macros
+#  临时禁用文件中的const构造函数的提示，//ignore_for_file: prefer_const_constructors 
